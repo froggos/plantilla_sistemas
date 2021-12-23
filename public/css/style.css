@@ -1,22 +1,53 @@
+@font-face {
+  font-family: gobCL_bold;
+  src: url("./../fonts/gobCL_Bold.otf");
+}
+
+@font-face {
+  font-family: gobCL_heavy;
+  src: url("./../fonts/gobCL_Heavy.otf");
+}
+
+@font-face {
+  font-family: gobCL_light;
+  src: url("./../fonts/gobCL_Light.otf");
+}
+
+@font-face {
+  font-family: gobCL_regular;
+  src: url("./../fonts/gobCL_Regular.otf");
+}
+
 body {
   background-color: rgb(233, 233, 233);
 }
 
+.upper-nav {
+  display: none;
+  background-color: rgb(246, 186, 0);
+}
+
+#btn-toggler {
+  background-color: rgb(253, 205, 61);
+}
+
 .page .sidebar {
   height: 100vh;
-  width: 300px;
+  width: 260px;
   background-color: rgb(240, 240, 240);
   top: 0;
   left: 0;
   position: fixed;
+  transition: all 0.2s ease;
 }
 
 .page .content {
-  margin-left: 300px;
+  margin-left: 260px;
+  transition: all 0.2s ease;
 }
 
 body.active .page .sidebar {
-  left: -300px;
+  left: -260px;
 }
 
 body.active .page .content {
@@ -24,16 +55,26 @@ body.active .page .content {
   width: 100%;
 }
 
+.sidebar {
+  box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
 .sidebar-header {
   padding: 10px 15px 10px 15px;
 }
 
 .sidebar-logo-container {
-  /* background-color: ; */
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  padding-left: 3px;
 }
 
 .logo-container {
   max-width: 50px;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 6px 8px;
 }
 
 .logo-sidebar {
@@ -41,10 +82,46 @@ body.active .page .content {
   height: auto;
 }
 
+.brand-name-container {
+  padding: 0px;
+  margin: 10px 10px 0px 5px;
+}
+
+.brand-name {
+  /* margin: 0px; */
+  line-height: 1.1rem;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: gobCL_bold;
+}
+
+.profile {
+  display: flex;
+  font-family: gobCL_heavy;
+}
+
+.profile-pic {
+  margin: 8px;
+  padding: 6px 8px;
+}
+
+.profile-name {
+  margin: 20px 10px 0px 10px;
+}
+
+.user-name {
+  /* margin: 0px; */
+  line-height: 1.1rem;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-family: gobCL_bold;
+}
+
 .navigation-list {
   list-style-type: none;
   padding: 0px 20px;
   margin-top: 20px;
+  font-family: gobCL_light;
 }
 
 .navigation-list-item {
@@ -78,9 +155,10 @@ body.active .page .content {
 .navigation-bar {
   background-color: rgb(246, 186, 0);
   height: 50px;
-  padding: 34px 0px;
+  padding: 30px 0px;
   display: flex;
   align-items: center;
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-toggler {
@@ -88,4 +166,120 @@ body.active .page .content {
   font-size: 16px;
   margin-left: 10px;
   /* z-index: 999; */
+}
+
+.navbar {
+  padding-top: 0;
+}
+
+.page-item {
+  margin-left: 14px;
+}
+
+.page-item a {
+  color: rgb(230, 230, 230);
+  font-family: gobCL_bold;
+}
+
+.page-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.page-item a:hover {
+  color: white;
+  font-family: gobCL_heavy;
+}
+
+.main {
+  padding: 20px;
+}
+
+body.unactive .page .content {
+  margin-left: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 540px) and (max-width: 780px) {
+  .upper-nav {
+    /* height: 10px; */
+    padding: 9.5px 0px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  #btn-toggler {
+    background-color: rgb(253, 205, 61);
+    font-size: 16px;
+    margin-left: 10px
+  }
+
+  .sidebar {
+    margin-top: 59.5px;
+  }
+
+  .sidebar-toggler {
+    display: none;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .upper-nav {
+    /* height: 10px; */
+    padding: 9.5px 0px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  #btn-toggler {
+    background-color: rgb(253, 205, 61);
+    font-size: 16px;
+    margin-left: 10px
+  }
+
+  .sidebar {
+    margin-top: 59.5px;
+  }
+
+  .sidebar-toggler {
+    display: none;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .upper-nav {
+    /* height: 10px; */
+    padding: 9.5px 0px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  #btn-toggler {
+    background-color: rgb(253, 205, 61);
+    font-size: 16px;
+    margin-left: 10px
+  }
+
+  .sidebar {
+    margin-top: 59.5px;
+  }
+
+  .sidebar-toggler {
+    display: none;
+  }
+
+  .navigation-bar {
+    display: none;
+  }
 }

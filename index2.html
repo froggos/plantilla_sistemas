@@ -9,6 +9,34 @@
 </head>
 
 <body>
+    <header class="navbar navbar-expand-md navbar-light bd-navbar upper-nav">
+        <nav class="container-xxl flex-wrap flex-md-nowrap">
+            <button id="btn-toggler" class="btn btn-warning">
+                <svg width="25" heigth="30" class="svg-icon" viewBox="0 0 20 20">
+                    <path fill="white"
+                        d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+                                    c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+                                    s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+                                    c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z">
+                    </path>
+                </svg>
+            </button>
+            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                <li class="nav-item col-6 col-md-auto">
+                    <button class="btn">
+                        <svg class="icon icon-tabler icon-tabler-caret-down" width="25" height="25" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="white" fill="white" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)"></path>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="page">
         <div class="sidebar">
             <div class="sidebar-header">
@@ -16,18 +44,72 @@
                     <div class="logo-container">
                         <!-- <img src="" alt="" class="logo-sidebar"> -->
                     </div>
+                    <div class="brand-name-container">
+                        <p class="brand-name">
+                            Hospital de Ovalle
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="sidebar-body">
+                <div class="profile-container">
+                    <div class="profile">
+                        <div class="profile-pic">
+                            <svg class="icon icon-tabler icon-tabler-user" width="30" height="30" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                            </svg>
+                        </div>
+                        <div class="profile-name">
+                            <p class="user-name">
+                                Benjamín Osorio
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="navigation-list">
+                        <li class="navigation-list-item active">
+                            <a class="navigation-link" href="#">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <svg
+                                            class="icon icon-tabler icon-tabler-logout" width="21" height="24"
+                                            viewBox="0 0 30 30" stroke-width="2" stroke="currentColor" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path
+                                                d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2">
+                                            </path>
+                                            <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="col-10">
+                                        Salir
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr style="margin-top: 30px;color:rgba(0, 0, 0, 0.74); height: 1.2px;">
                 <ul class="navigation-list">
                     <li class="navigation-list-item active">
                         <a class="navigation-link" href="#">
                             <div class="row">
                                 <div class="col-2">
-                                    Icon
+                                    <svg width="21" height="21" viewBox="0 0 30 30" stroke-width="2"
+                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                                    </svg>
                                 </div>
                                 <div class="col-10">
-                                    Item 1
+                                    Dashboard
                                 </div>
                             </div>
                         </a>
@@ -36,10 +118,20 @@
                         <a class="navigation-link" href="#">
                             <div class="row">
                                 <div class="col-2">
-                                    Icon
+                                    <svg width="21" height="21" viewBox="0 0 30 30" stroke-width="2"
+                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M13 5h8"></path>
+                                        <path d="M13 9h5"></path>
+                                        <path d="M13 15h8"></path>
+                                        <path d="M13 19h5"></path>
+                                        <rect x="3" y="4" width="6" height="6" rx="1"></rect>
+                                        <rect x="3" y="14" width="6" height="6" rx="1"></rect>
+                                    </svg>
                                 </div>
                                 <div class="col-10">
-                                    Item 2
+                                    Formularios
                                 </div>
                             </div>
                         </a>
@@ -69,9 +161,8 @@
                         </a>
                     </li>
                 </ul>
-                <hr style="margin-top: 30px;color:rgba(51, 51, 51, 0.233);">
-                <ul class="teams-list">
-                    <!-- <li class="teams-list-item">
+                <!-- <ul class="teams-list"> -->
+                <!-- <li class="teams-list-item">
                         <div class="row">
                             <div class="col-2">
 
@@ -81,14 +172,57 @@
                             </div>
                         </div>
                     </li> -->
-                </ul>
+                <!-- </ul> -->
             </div>
         </div>
         <div class="content">
             <div class="navigation-bar">
-                <button id="btn-toggler" class="btn btn-warning sidebar-toggler">
-                    Toggler
+                <button class="btn btn-warning sidebar-toggler">
+                    <svg width="25" heigth="30" class="svg-icon" viewBox="0 0 20 20">
+                        <path fill="white"
+                            d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314
+                                        c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743
+                                        s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314
+                                        c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z">
+                        </path>
+                    </svg>
                 </button>
+                <div class="container">
+                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+                        <li class="nav-item col-6 col-md-auto page-item">
+                            <a href="#" class="nav-link p-2">
+                                Página 1
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto page-item">
+                            <a href="#" class="nav-link p-2">
+                                Página 2
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto page-item">
+                            <a href="#" class="nav-link p-2">
+                                Página 3
+                            </a>
+                        </li>
+                        <li class="nav-item col-6 col-md-auto page-item">
+                            <a href="#" class="nav-link p-2">
+                                Página 4
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-container">
+                <div class="container-fluid main">
+                    <div class="row">
+                        <div class="col">
+                            Elemento
+                        </div>
+                        <div class="col">
+                            Elemento
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
