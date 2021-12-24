@@ -100,10 +100,10 @@ body.active .page .content {
   font-family: gobCL_heavy;
 }
 
-.profile-pic {
+/* .profile-pic {
   margin: 8px;
   padding: 6px 8px;
-}
+} */
 
 .profile-name {
   margin: 20px 10px 0px 10px;
@@ -111,9 +111,10 @@ body.active .page .content {
 
 .user-name {
   /* margin: 0px; */
+  margin-top: 10px;
   line-height: 1.1rem;
-  font-size: 17px;
-  letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 2px;
   font-family: gobCL_bold;
 }
 
@@ -212,7 +213,7 @@ body.unactive .page .content {
   #btn-toggler {
     background-color: rgb(253, 205, 61);
     font-size: 16px;
-    margin-left: 10px
+    margin-left: 10px;
   }
 
   .sidebar {
@@ -240,7 +241,7 @@ body.unactive .page .content {
   #btn-toggler {
     background-color: rgb(253, 205, 61);
     font-size: 16px;
-    margin-left: 10px
+    margin-left: 10px;
   }
 
   .sidebar {
@@ -268,7 +269,7 @@ body.unactive .page .content {
   #btn-toggler {
     background-color: rgb(253, 205, 61);
     font-size: 16px;
-    margin-left: 10px
+    margin-left: 10px;
   }
 
   .sidebar {
