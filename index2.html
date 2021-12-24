@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <link href="public/css/bootstrap.css" rel="stylesheet">
     <link href="public/css/style.css" rel="stylesheet">
-    <script href="public/js/popper.min.js"></script>
+    <script src="public/js/popper.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,8 @@
             </ul>
             <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
                 <li class="nav-item col-6 col-md-auto">
-                    <button class="btn">
+                    <button class="btn navbar-toggler" type="button" data-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent">
                         <svg class="icon icon-tabler icon-tabler-caret-down" width="25" height="25" viewBox="0 0 24 24"
                             stroke-width="2" stroke="white" fill="white" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -37,6 +38,9 @@
             </ul>
         </nav>
     </header>
+    <div class="navigation-bar-expand">
+        
+    </div>
     <div class="page">
         <div class="sidebar">
             <div class="sidebar-header">
@@ -57,9 +61,9 @@
                         <div class="row">
                             <div class="col d-flex justify-content-center">
                                 <div class="profile-pic">
-                                    <svg class="icon icon-tabler icon-tabler-user" width="45" height="45" viewBox="0 0 22 22"
-                                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                    <svg class="icon icon-tabler icon-tabler-user" width="45" height="45"
+                                        viewBox="0 0 22 22" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <circle cx="12" cy="7" r="4"></circle>
                                         <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
@@ -96,15 +100,14 @@
                             <a class="navigation-link" href="#">
                                 <div class="row">
                                     <div class="col-2">
-                                        <svg
-                                            class="icon icon-tabler icon-tabler-logout" width="21" height="24"
+                                        <svg class="icon icon-tabler icon-tabler-settings" width="21" height="21"
                                             viewBox="0 0 30 30" stroke-width="2" stroke="currentColor" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                             <path
-                                                d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2">
+                                                d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z">
                                             </path>
-                                            <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
                                         </svg>
                                     </div>
                                     <div class="col-10">
@@ -117,8 +120,7 @@
                             <a class="navigation-link" href="#">
                                 <div class="row">
                                     <div class="col-2">
-                                        <svg
-                                            class="icon icon-tabler icon-tabler-logout" width="21" height="24"
+                                        <svg class="icon icon-tabler icon-tabler-logout" width="21" height="24"
                                             viewBox="0 0 30 30" stroke-width="2" stroke="currentColor" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
