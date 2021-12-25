@@ -189,26 +189,30 @@ body.active .page .content {
 
 .page-item a:hover {
   color: white;
-  font-family: gobCL_heavy;
 }
 
 .main {
   padding: 20px;
 }
 
-body.unactive .page .content {
-  margin-left: 0;
-  width: 100%;
+.collapse-links {
+  margin-top: 12px;
 }
 
-.navigation-bar-expand {
-  background-color: rgb(246, 186, 0);
-  margin-left: 260px;
-  height: 50px;
-  padding: 30px 0px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+
+.collapse-links li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.collapse-links li a{
+  font-family: gobCL_bold;
+  color: rgb(230, 230, 230) !important;
+  padding: 15px 0px 15px 5px !important;
+}
+
+.collapse-links li a:hover {
+  color: white !important;
 }
 
 @media screen and (min-width: 540px) and (max-width: 780px) {
@@ -227,7 +231,7 @@ body.unactive .page .content {
   }
 
   .sidebar {
-    margin-top: 59.5px;
+    margin-top: 60px;
   }
 
   .sidebar-toggler {
@@ -255,7 +259,7 @@ body.unactive .page .content {
   }
 
   .sidebar {
-    margin-top: 59.5px;
+    margin-top: 60px;
   }
 
   .sidebar-toggler {
@@ -283,7 +287,7 @@ body.unactive .page .content {
   }
 
   .sidebar {
-    margin-top: 59.5px;
+    margin-top: 60px;
   }
 
   .sidebar-toggler {
