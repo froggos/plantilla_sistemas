@@ -30,4 +30,7 @@ const checkChange = () => {
     }
 }
 
+let btnClass = document.getElementsByClassName("btn-hdo");
+
+
 window.setInterval(checkChange, 150);

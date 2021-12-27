@@ -218,7 +218,7 @@ body.active .page .content {
 .panel {
   position: relative;
   background-color:  rgb(240, 240, 240);
-  padding: 14px 6px 14px 6px;
+  padding: 18px 6px 18px 6px;
   border-radius: 5px;
   margin-bottom: 1.233rem;
   box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
@@ -231,11 +231,44 @@ body.active .page .content {
   flex-direction: row;
 }
 
-/* .form-control {
+.form-control {
+  font-family: gobCL_light;
   background-color: inherit !important;
-  border: none;
-  padding: 0 !important;
-} */
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2.5px solid;
+  border-color: rgba(246, 185, 0, 0.2);
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.form-control:focus {
+  border-color: rgb(246, 186, 0);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075), 0 0 0px rgb(246, 186, 0, 0.6);
+}
+
+.form-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-hdo {
+  background-color: rgb(246, 186, 0);
+  color: white;
+}
+
+.btn-hdo:hover {
+  background-color: rgb(207, 155, 0);
+  color: white;
+}
+
+.btn-hdo:focus {
+  box-shadow: none;
+  color: white;
+  background-color: rgb(246, 186, 0);
+}
 
 @media screen and (min-width: 540px) and (max-width: 780px) {
   .upper-nav {
