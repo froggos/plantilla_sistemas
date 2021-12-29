@@ -333,12 +333,24 @@ body.active .page .content {
 .tag {
   display: flex;
   flex-direction: row;
+  align-items: center;
   list-style: none;
   padding-top: 2px;
   color: white;
   border-radius: 5px;
   background-color:rgb(246, 186, 0);
-  margin-right: 4px;
+  padding-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.tag-remover {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 540px) and (max-width: 780px) {

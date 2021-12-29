@@ -30,37 +30,4 @@ const checkChange = () => {
     }
 }
 
-const button = document.querySelectorAll("button");
-button.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-        btn.blur();
-    });
-});
-
-const tagContainer = document.querySelector(".tag-container");
-const buttonsClass = document.getElementsByTagName("button");
-for (let i = 0; i < buttonsClass.length; i++) {
-    let button = buttonsClass[i];
-    if (button.classList.contains("tag-generator")) {
-        button.addEventListener("click", (e) => {
-            let tag = document.createElement("li");
-            let text = document.createTextNode(e.target.value);
-            tag.className = "tag";
-            tag.innerHTML = `<span class="tag-remover">×</span>`;
-            tag.appendChild(text);
-            tagContainer.appendChild(tag);
-        });
-    }
-}
-
-// const tagSelect = document.querySelector(".tag-selector");
-// const tagContainer = document.querySelector(".tag-container");
-// tagSelect.addEventListener("change", (e) => {
-//     let tag = document.createElement("li");
-//     let text = document.createTextNode(e.target.value);
-//     tag.innerHTML = `<span>×</span>`;
-//     tag.appendChild(text);
-//     tagContainer.appendChild(tag);
-// });
-
 window.setInterval(checkChange, 150);
