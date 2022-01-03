@@ -12,7 +12,7 @@
 <!-- Los icons utilizados son sacados de https://tabler-icons.io/. Se sugiere uso único de icons desde esta página. -->
 
 <body>
-    <header class="navbar navbar-expand-lg navbar-light bd-navbar upper-nav">
+    <div class="navbar fixed-top navbar-expand-lg navbar-light bd-navbar upper-nav">
         <nav class="container-xxl flex-wrap flex-md-nowrap">
             <button id="btn-toggler" class="btn btn-warning">
                 <svg width="25" heigth="30" class="svg-icon" viewBox="0 0 20 20">
@@ -57,9 +57,12 @@
                 </ul>
             </div>
         </nav>
-    </header>
+    </div>
 
     <div class="page">
+        
+        <!-- Barra de naveción lateral -->
+
         <div class="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-logo-container">
@@ -231,6 +234,11 @@
                 </ul>
             </div>
         </div>
+
+        <!-- FIN Barra de navegación lateral -->
+
+        <!-- Contenido principal -->
+
         <div class="content">
             <div class="navigation-bar">
                 <button class="btn btn-warning sidebar-toggler">
@@ -268,9 +276,12 @@
                     </ul>
                 </div>
             </div>
+            <div class="top-separator">
+                Separador
+            </div>
             <div class="main-container">
                 <div class="container-fluid main">
-                    <div class="row">
+                    <div class="row row-to-col top-container">
                         <div class="col">
                             <div class="panel">
                                 <div class="panel-header container-fluid">
@@ -474,7 +485,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row row-to-col">
                         <div class="col">
                             <div class="panel">
                                 <div class="panel-header container-fluid">
@@ -491,11 +502,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- FIN Contenido principal -->
     </div>
     <script src="public/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugins -->
-    <script src="public/js/sidebar.js"></script>
+    <script src="public/js/core.js"></script>
     <script src="public/js/tag-creator.js"></script>
     <!-- Plugins -->
 
