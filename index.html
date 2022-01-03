@@ -60,7 +60,7 @@
     </div>
 
     <div class="page">
-        
+
         <!-- Barra de naveción lateral -->
 
         <div class="sidebar">
@@ -489,12 +489,74 @@
                         <div class="col">
                             <div class="panel">
                                 <div class="panel-header container-fluid">
-                                    <h5>
-                                        Título 3
+                                    <h5 class="form-label ls-1">
+                                        Utilidades
                                     </h5>
                                 </div>
                                 <div class="panel-body container-fluid">
-                                    Elemento 3
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <label for="" class="form-label ls-1">Toast</label>
+                                                <div class="toast-examples">
+                                                    <button type="button" class="btn btn-primary btn-wave-primary"
+                                                        id="doToastSuccessBottom">
+                                                        Esquina inferior derecha
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary btn-wave-primary"
+                                                        id="doToastSuccessTop">
+                                                        Esquina superior derecha
+                                                    </button>
+                                                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                                                        <div id="toastSuccessBottom"
+                                                            class="toast align-items-center text-white bg-primary border-0 hide"
+                                                            role="alert" aria-live="assertive" aria-atomic="true">
+                                                            <div class="d-flex">
+                                                                <div class="toast-body">
+                                                                    Tarea completada con éxito.
+                                                                </div>
+                                                                <button type="button"
+                                                                    class="btn-close btn-close-white me-2 m-auto"
+                                                                    data-bs-dismiss="toast" aria-label="Close"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+                                                        <div id="toastSuccessTop"
+                                                            class="toast align-items-center text-white bg-primary border-0 hide"
+                                                            role="alert" aria-live="assertive" aria-atomic="true">
+                                                            <div class="d-flex">
+                                                                <div class="toast-body">
+                                                                    Tarea completada con éxito.
+                                                                </div>
+                                                                <button type="button"
+                                                                    class="btn-close btn-close-white me-2 m-auto"
+                                                                    data-bs-dismiss="toast" aria-label="Close"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="panel">
+                                <div class="panel-header container-fluid">
+                                    <h5 class="form-label ls-1">
+                                        Más
+                                    </h5>
+                                </div>
+                                <div class="panel-body container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -510,6 +572,7 @@
     <!-- Plugins -->
     <script src="public/js/core.js"></script>
     <script src="public/js/tag-creator.js"></script>
+    <script src="public/js/toast.js"></script>
     <!-- Plugins -->
 
 </body>

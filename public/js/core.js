@@ -11,11 +11,14 @@ button.forEach(btn => {
 
 let toggler = document.querySelector(".sidebar-toggler") !== null;
 
-let hidden_toggler = document.getElementById("btn-toggler");
+let hidden_toggler = document.getElementById("btn-toggler") !== null;
 
-hidden_toggler.addEventListener("click", function () {
-    toggle();
-});
+if(hidden_toggler) {
+    hidden_toggler = document.getElementById("btn-toggler");
+    hidden_toggler.addEventListener("click", function () {
+        toggle();
+    });
+}
 
 if(toggler) {
     toggler = document.querySelector(".sidebar-toggler");

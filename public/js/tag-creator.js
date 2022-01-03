@@ -2,8 +2,10 @@ const tagContainer = document.querySelector(".tag-container");
 
 const tagGenerator = document.querySelector(".tagger");
 
-const createTag = () => {
-    if(tagGenerator.value.trim() !== "") {
+const pattern = /^[a-zA-Z]+$/;
+
+const createTag = (evt) => {
+    if(tagGenerator.value.trim() !== "" && pattern.test(tagGenerator.value.trim())) {
         let tag = document.createElement("li");
         let text = document.createTextNode(tagGenerator.value.trim());
         let remover = document.createElement("span");
