@@ -474,8 +474,8 @@
                                                 <label for="" class="form-label ls-1">
                                                     Generador de etiquetas
                                                 </label>
-                                                <input type="text" class="form-control ls-1 tagger">
-                                                <div class="tag-container">
+                                                <input type="text" class="form-control ls-1 tagger" for="tags" plugin-reader="tag-gen">
+                                                <div id="tags" class="tag-container">
 
                                                 </div>
                                             </div>
@@ -553,11 +553,18 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="mb-3">
-
+                                                
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-to-col">
+                        <div class="col">
+                            <div class="panel">
+                                
                             </div>
                         </div>
                     </div>
@@ -570,9 +577,9 @@
     <script src="public/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugins -->
-    <script src="public/js/core.js"></script>
-    <script src="public/js/tag-creator.js"></script>
-    <script src="public/js/toast.js"></script>
+    <script src="public/js/devhovjs/core.js"></script>
+    <script src="public/js/devhovjs/tag-creator.js"></script>
+    <script src="public/js/devhovjs/toast.js"></script>
     <!-- Plugins -->
 
 </body>

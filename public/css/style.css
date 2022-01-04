@@ -335,7 +335,7 @@ body.active .page .content {
   padding-top: 2px;
   color: white;
   border-radius: 5px;
-  background-color: rgb(246, 186, 0);
+  background-color: #001EA8;
   padding-right: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
@@ -374,6 +374,7 @@ body.active .page .content {
   border-radius: 20px;
   border: none;
   background-color: #001EA8 !important;
+  margin-bottom: 5px;
 }
 
 .btn-primary:focus,
