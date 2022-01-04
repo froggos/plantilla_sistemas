@@ -3,7 +3,7 @@ const TagGenerator = (function () {
 
     const createTag = (input, container) => {
         const tag_container = document.getElementById(container);
-        if (input.trim() !== "" && pattern.test(input.trim()) && container) {
+        if (input.trim() !== "" && pattern.test(input.trim()) && tag_container) {
             let tag = document.createElement("li");
             let text = document.createTextNode(input.trim());
             let remover = document.createElement("span");
