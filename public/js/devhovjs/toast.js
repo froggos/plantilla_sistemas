@@ -1,38 +1,25 @@
-let option = {
-    animation: true,
-    delay: 2000,
-}
+const Toast = (function() {
+    let option = {
+        animation: true,
+        delay: 2000,
+    }
+    
+    let toastElList = [].slice.call(document.querySelectorAll(".toast"));
+    let toastList = toastElList.map((toastEl) => {
+        return new bootstrap.Toast(toastEl, option);
+    });
+    
+    return {
+        ToastList: toastList
+    }
+})();
 
-let toastElList = [].slice.call(document.querySelectorAll(".toast"));
-var toastList = toastElList.map((toastEl) => {
-    return new bootstrap.Toast(toastEl, option);
-});
-
-/** Ejemplo de uso en botón */
-
-let toastTest = document.querySelector("#doToastSuccessBottom");
-
-let toastTop = document.querySelector("#doToastSuccessTop");
-
-const ShowToastBottom = () => {
-    let toastHTML = document.getElementById("toastSuccessBottom");
-    let toastElem = new bootstrap.Toast(toastHTML, option);
-    toastElem.show();
-}
-
-const ShowToastTop = () => {
-    let toastHTML = document.getElementById("toastSuccessTop");
-    let toastElem = new bootstrap.Toast(toastHTML, option);
-    toastElem.show();
-}
-
+const toastTest = document.getElementById("doToastSuccessBottom");
 toastTest.addEventListener("click", () => {
-    ShowToastBottom();
+    Toast.ToastList[0].show();
 });
 
+const toastTop = document.getElementById("doToastSuccessTop");
 toastTop.addEventListener("click", () => {
-    ShowToastTop();
+    Toast.ToastList[1].show();
 });
-
-
-

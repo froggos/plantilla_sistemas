@@ -370,12 +370,30 @@ body.active .page .content {
   background-color: #001EA8 !important;
 }
 
+.btn-danger {
+  border-radius: 20px;
+  border: none;
+  background-color: #F50C35 !important;
+  margin-bottom: 5px;
+}
+
+.btn-danger:focus,
+.btn-danger:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .bg-primary {
   background-color: #001EA8 !important;
 }
 
+.bg-danger {
+  background-color: #F50C35 !important;
+}
+
 .card {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 540px) and (max-width: 780px) {

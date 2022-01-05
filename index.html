@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="public/css/bootstrap.css" rel="stylesheet">
     <link href="public/css/style.css" rel="stylesheet">
+    <link href="public/css/table.css" rel="stylesheet">
     <script src="public/js/popper.min.js"></script>
 </head>
 
@@ -481,19 +482,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-to-col">
-                        <div class="col">
-                            <div class="panel">
-                                <div class="panel-header container-fluid">
-                                    <h5 class="form-label ls-1">
-                                        Utilidades
-                                    </h5>
-                                </div>
-                                <div class="panel-body container-fluid">
                                     <div class="row">
                                         <div class="col">
                                             <div class="mb-3">
@@ -501,11 +489,11 @@
                                                 <div class="toast-examples">
                                                     <button type="button" class="btn btn-primary btn-wave-primary"
                                                         id="doToastSuccessBottom">
-                                                        Esquina inferior derecha
+                                                        Éxito
                                                     </button>
-                                                    <button type="button" class="btn btn-primary btn-wave-primary"
+                                                    <button type="button" class="btn btn-danger btn-wave-primary"
                                                         id="doToastSuccessTop">
-                                                        Esquina superior derecha
+                                                        Error
                                                     </button>
                                                     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
                                                         <div id="toastSuccessBottom"
@@ -523,11 +511,11 @@
                                                     </div>
                                                     <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
                                                         <div id="toastSuccessTop"
-                                                            class="toast align-items-center text-white bg-primary border-0 hide"
+                                                            class="toast align-items-center text-white bg-danger border-0 hide"
                                                             role="alert" aria-live="assertive" aria-atomic="true">
                                                             <div class="d-flex">
                                                                 <div class="toast-body">
-                                                                    Tarea completada con éxito.
+                                                                    Ocurrió un error.
                                                                 </div>
                                                                 <button type="button"
                                                                     class="btn-close btn-close-white me-2 m-auto"
@@ -536,24 +524,6 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="panel">
-                                <div class="panel-header container-fluid">
-                                    <h5 class="form-label ls-1">
-                                        Más
-                                    </h5>
-                                </div>
-                                <div class="panel-body container-fluid">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="mb-3">
-
                                             </div>
                                         </div>
                                     </div>
@@ -576,26 +546,107 @@
                                     <div class="row">
                                         <div class="col">
                                             <div class="mb-3 row">
-                                                <div class="card" style="width: 18rem;">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Carta</h5>
-                                                        <p class="card-text">Texto de ejemplo de carta, descripción
-                                                            breve.</p>
-                                                        <a href="#" class="btn btn-primary">Ir a inicio</a>
+                                                <div class="col">
+                                                    <div class="card" style="width: 18rem;">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Carta</h5>
+                                                            <p class="card-text">Texto de ejemplo de carta, descripción
+                                                                breve.</p>
+                                                            <a href="#" class="btn btn-primary">Ir a inicio</a>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="card" style="width: 18rem;">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title">Carta</h5>
-                                                        <h6 class="card-subtitle mb-2 text-muted">Subtítulo</h6>
-                                                        <p class="card-text">Texto de ejemplo de carta, descripción breve.</p>
-                                                        <a href="#" class="card-link">Link</a>
-                                                        <a href="#" class="card-link">Otro link</a>
+                                                <div class="col">
+                                                    <div class="card" style="width: 18rem;">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Carta con links</h5>
+                                                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo</h6>
+                                                            <p class="card-text">Texto de ejemplo de carta, descripción
+                                                                breve.</p>
+                                                            <a href="#" class="card-link">Link</a>
+                                                            <a href="#" class="card-link">Otro link</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card" style="width: 18rem;">
+                                                        <img src="public/img/frog.jpg" class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Carta con imagen</h5>
+                                                            <p class="card-text">Descripción de carta integrando una
+                                                                imagen de cabecera.</p>
+                                                            <a href="#" class="btn btn-primary">Ir a inicio</a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-to-col">
+                        <div class="col">
+                            <div class="panel">
+                                <div class="panel-header container-fluid">
+                                    <h5 class="form-label ls-1">
+                                        Paginación
+                                    </h5>
+                                </div>
+                                <div class="panel-body container-fluid">
+                                    <label for="" class="form-label ls-1">
+                                        Paginación con cartas
+                                    </label>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="mb-3">
+                                                <div class="list" id="list">
+                                                    <!-- <div class="card" style="width: 18rem;">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Carta</h5>
+                                                            <p class="card-text">Texto de ejemplo de carta, descripción
+                                                                breve.</p>
+                                                            <a href="#" class="btn btn-primary">Ir a inicio</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width: 18rem;">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Carta</h5>
+                                                            <p class="card-text">Texto de ejemplo de carta, descripción
+                                                                breve.</p>
+                                                            <a href="#" class="btn btn-primary">Ir a inicio</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width: 18rem;">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Carta</h5>
+                                                            <p class="card-text">Texto de ejemplo de carta, descripción
+                                                                breve.</p>
+                                                            <a href="#" class="btn btn-primary">Ir a inicio</a>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                                <div class="pagenumbers" id="pagination">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-to-col">
+                        <div class="col">
+                            <div class="panel">
+                                <div class="panel-header container-fluid">
+                                    <h5 class="form-label ls-1">
+                                        Tabla (en testeo)
+                                    </h5>
+                                </div>
+                                <div class="panel-body container-fluid">
+                                    
                                 </div>
                             </div>
                         </div>
@@ -612,6 +663,7 @@
     <script src="public/js/devhovjs/core.js"></script>
     <script src="public/js/devhovjs/tag-creator.js"></script>
     <script src="public/js/devhovjs/toast.js"></script>
+    <script src="public/js/devhovjs/table.js"></script>
     <!-- Plugins -->
 
 </body>
